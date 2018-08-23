@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dgupta25.cs478.uic.service1">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher_background">
+        <service
+            android:name=".KeyGeneratorImpl"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="dgupta25.cs478.uic.servicecommon.KeyGenerator" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Main2Activity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
